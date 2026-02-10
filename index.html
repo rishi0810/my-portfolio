@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Raj</title>
+    <meta name="description"
+        content="Me, a full-stack developer and technical product engineer specializing in scalable web applications, GenAI integrations, and cloud-native solutions.">
+    <meta name="keywords"
+        content="Rishi Raj, full-stack developer, web developer, technical product engineer, React, Node.js, GenAI, AI integration, cloud-native, Kotlin, portfolio, software engineer, Times of India">
+    <meta name="author" content="Rishi Raj">
+
+    <meta property="og:title" content="Rishi Raj – Portfolio">
+    <meta property="og:description"
+        content="Full-stack developer specializing in scalable web applications, GenAI integrations, and cloud-native solutions.">
+    <meta property="og:image" content="/static/share-card.webp">
+    <meta property="og:url" content="https://rishiraj.dev">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rishi Raj – Portfolio">
+    <meta name="twitter:description"
+        content="Full-stack developer specializing in scalable web applications, GenAI integrations, and cloud-native solutions.">
+    <meta name="twitter:image" content="/static/share-card.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/logo.webp" type="image/webp">
+    <script>
+        (function () {
+            var mq = window.matchMedia('(prefers-color-scheme: dark)');
+            var theme = mq.matches ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+
+            document.addEventListener('DOMContentLoaded', function () {
+                var btn = document.getElementById('theme-toggle');
+                if (btn) btn.textContent = theme === 'dark' ? 'LIGHT' : 'DARK';
+            });
+
+            mq.addEventListener('change', function (e) {
+                var t = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+                var btn = document.getElementById('theme-toggle');
+                if (btn) btn.textContent = t === 'dark' ? 'LIGHT' : 'DARK';
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <span>RISHI RAJ</span>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/rishi0810" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/rishiraj2003" target="_blank">LinkedIn</a>
+            <button id="theme-toggle" onclick="toggleTheme()">DARK</button>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>RISHI RAJ</h1>
+            <p>I mostly make full stack stuff. I also love learning new technologies as they come out, just to try my best to stay ahead of the curve. If you fear the change, you will be left behind.</p>
+            <div class="hero-links">
+                <a href="static/Resume.pdf" target="_blank">Download CV</a>
+            </div>
+        </div>
+        <img class="hero-avatar" src="static/pfp.webp" alt="Rishi Raj">
+    </div>
+
+    <hr>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p class="muted">Check out some of my stuff</p>
+
+        <div class="project">
+            <div class="project-header">
+                <img src="static/screenshots/lll.svg" alt="LeafLens-AI logo">
+                <h3>LeafLens-AI</h3>
+            </div>
+            <p class="project-description">AI-powered plant disease detection system with around 70% accuracy across 38+
+                diseases.</p>
+            <ul class="tech-list">
+                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                        alt="React"></li>
+                <li><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                        alt="Node.js"></li>
+                <li><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                        alt="Express"></li>
+                <li><img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white"
+                        alt="Gemini API"></li>
+                <li><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                        alt="Tailwind"></li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/rishi0810/LeafLens-AI" target="_blank">Source</a>
+                <a href="https://leaf-lens-ai.vercel.app/" target="_blank">Live</a>
+            </div>
+            <div class="project-screenshots">
+                <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
+                <div class="screenshots-container">
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/lld.webp" alt="LeafLens-AI desktop">
+                        <span class="screenshot-label">Desktop</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/llm.webp" alt="LeafLens-AI mobile">
+                        <span class="screenshot-label">Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <img src="static/screenshots/mcli.webp" alt="Musicality logo">
+                <h3>Musicality</h3>
+            </div>
+            <p class="project-description">High-performance music streaming app built with Kotlin and Jetpack Compose.
+            </p>
+            <ul class="tech-list">
+                <li><img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"
+                        alt="Kotlin"></li>
+                <li><img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white"
+                        alt="Jetpack Compose"></li>
+                <li><img src="https://img.shields.io/badge/ExoPlayer-FF0000?style=for-the-badge&logo=youtube&logoColor=white"
+                        alt="ExoPlayer"></li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/rishi0810/Musicality-App" target="_blank">Source</a>
+            </div>
+            <div class="project-screenshots">
+                <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
+                <div class="screenshots-container">
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/mcld.webp" alt="Musicality desktop">
+                        <span class="screenshot-label">Desktop</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/mclm.webp" alt="Musicality mobile">
+                        <span class="screenshot-label">Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <img src="static/screenshots/bbl.avif" alt="Bable logo">
+                <h3>Bable</h3>
+            </div>
+            <p class="project-description">Blogging website, fully supporting markdown text formatting with images.</p>
+            <ul class="tech-list">
+                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                        alt="React"></li>
+                <li><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                        alt="Tailwind"></li>
+                <li><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                        alt="MongoDB"></li>
+                <li><img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                        alt="Express"></li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/rishi0810/Bable" target="_blank">Source</a>
+                <a href="https://bable.vercel.app/" target="_blank">Live</a>
+            </div>
+            <div class="project-screenshots">
+                <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
+                <div class="screenshots-container">
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/bbd.webp" alt="Bable desktop">
+                        <span class="screenshot-label">Desktop</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/bbm.webp" alt="Bable mobile">
+                        <span class="screenshot-label">Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <img src="static/screenshots/jnl.svg" alt="JeeNeetards logo">
+                <h3>JeeNeetards</h3>
+            </div>
+            <p class="project-description">AI-powered progress tracker for competitive exams.</p>
+            <ul class="tech-list">
+                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                        alt="React"></li>
+                <li><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                        alt="Tailwind"></li>
+                <li><img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white"
+                        alt="Gemini"></li>
+            </ul>
+            <div class="project-links">
+                <a href="https://github.com/rishi0810/JeeNeeTards" target="_blank">Source</a>
+                <a href="https://jeeneetardsv1.vercel.app/" target="_blank">Live</a>
+            </div>
+            <div class="project-screenshots">
+                <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
+                <div class="screenshots-container">
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/jnd.webp" alt="JeeNeetards desktop">
+                        <span class="screenshot-label">Desktop</span>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="static/screenshots/jnm.webp" alt="JeeNeetards mobile">
+                        <span class="screenshot-label">Mobile</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+                alt="JavaScript">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
+                alt="Python">
+            <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"
+                alt="Kotlin">
+            <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
+                alt="C++">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                alt="HTML">
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                alt="React">
+            <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                alt="Next.js">
+            <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+                alt="Node.js">
+            <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                alt="Express">
+            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                alt="Tailwind">
+            <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                alt="MongoDB">
+            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                alt="Docker">
+            <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                alt="Kubernetes">
+            <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+                alt="Jenkins">
+            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="experience">
+        <h2>Work Experience & Education</h2>
+
+        <div class="exp-item">
+            <div class="date">June 2025 - Present</div>
+            <img src="static/toi.webp" alt="Times of India" class="exp-logo">
+            <h3>Technical Product Intern</h3>
+            <div class="company">Times of India</div>
+
+            <div class="exp-projects">
+                <div class="exp-proj">
+                    <div class="exp-proj-head"><a
+                            href="https://timesofindia.indiatimes.com/elections/assembly-elections/bihar/simulation-room/"
+                            target="_blank">Bihar Election Simulation</a> <small>Nov 2025</small></div>
+                    <p>Co-developed automated election simulation platform with custom web scraper and LLM integration.
+                        Scaled to 11,000 peak concurrent users with 3x average session duration. Runner-Up in Times
+                        Internet AI-Innovation Challenge.</p>
+                    <ul class="tech-list">
+                        <li><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                                alt="Next.js"></li>
+                        <li><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+                                alt="Jenkins"></li>
+                        <li><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                                alt="Kubernetes"></li>
+                        <li><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                                alt="Docker"></li>
+                    </ul>
+                    <ul class="highlights">
+                        <li>11,000 peak concurrent users</li>
+                        <li>3x average session duration</li>
+                        <li>Runner-Up in Times Internet AI-Innovation Challenge</li>
+                    </ul>
+                </div>
+                <div class="exp-proj">
+                    <div class="exp-proj-head"><a
+                            href="https://timesofindia.indiatimes.com/business/budget/simulation-room/"
+                            target="_blank">TOI Budget Simulation</a> <small>Jan 2026</small></div>
+                    <p>Solo-developed interactive Union Budget simulation using React SSR, achieving 17,000 unique users
+                        and 11% replay funnel with GenAI-accelerated asset creation.</p>
+                    <ul class="tech-list">
+                        <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                                alt="React SSR"></li>
+                        <li><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                                alt="Kubernetes"></li>
+                        <li><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+                                alt="Jenkins"></li>
+                        <li><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                                alt="Docker"></li>
+                    </ul>
+                    <ul class="highlights">
+                        <li>17,000 unique users</li>
+                        <li>11% replay funnel</li>
+                        <li>Solo development with GenAI-accelerated workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="exp-item">
+            <div class="date">Oct 2023 - Jan 2025</div>
+            <h3>Content Team Lead</h3>
+            <div class="company">Institution's Innovation Council</div>
+            <p>Led content strategy and creation for innovation initiatives, managing reports, social media, and
+                newsletters.</p>
+            <ul>
+                <li>Generated comprehensive reports for Ministry of Education AICTE panel</li>
+                <li>Managed content workflow for social media posts and campaigns</li>
+                <li>Led newsletter creation and design initiatives</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="date">2022 - 2026</div>
+            <h3>B.Tech - Information Technology</h3>
+            <div class="company">Guru Tegh Bahadur Institute of Technology, GGSIPU</div>
+            <p>CGPA: 8.91 | Focus on Data Structures, Algorithms, OOPS, DBMS, and Generative AI</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p class="muted">Have a project in mind, or just want to say hi? I'd love to hear from you.</p>
+        <div class="contact-info">
+            <a href="mailto:rishi.1003raj@gmail.com">rishi.1003raj@gmail.com</a>
+            <a href="tel:+919911449830">+91-9911449830</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Rishi Raj. All rights reserved.
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
