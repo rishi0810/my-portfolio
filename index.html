@@ -71,10 +71,20 @@
             var theme = mq.matches ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', theme);
 
+            function updateHeroAvatar(currentTheme) {
+                var avatar = document.querySelector('.hero-avatar');
+                if (avatar) avatar.src = currentTheme === 'dark' ? 'static/pfp2.avif' : 'static/pfp1.avif';
+            }
+
             document.addEventListener('DOMContentLoaded', function () {
                 var btn = document.getElementById('theme-toggle');
                 if (btn) btn.textContent = theme === 'dark' ? 'LIGHT' : 'DARK';
+                updateHeroAvatar(theme);
             });
+
+            new MutationObserver(function () {
+                updateHeroAvatar(document.documentElement.getAttribute('data-theme'));
+            }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
             mq.addEventListener('change', function (e) {
                 var t = e.matches ? 'dark' : 'light';
@@ -112,20 +122,19 @@
     <div class="hero">
         <div class="hero-text">
             <h1>RISHI RAJ</h1>
-            <p>I am a Product Consultant and full-stack developer building data-driven products, scalable web applications,
-                and GenAI integrations. I enjoy turning new technologies into useful product experiences.</p>
+            <p>Full stack, some python and mostly a Gen AI power user. Technical Product Consultant, and likes to remain ahead of the curve as if you are afraid of the change, you are left behind</p>
             <div class="hero-links">
                 <a href="static/Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
             </div>
         </div>
-        <img class="hero-avatar" src="static/pfp.webp" alt="Rishi Raj" width="800" height="800">
+        <img class="hero-avatar" src="static/pfp1.avif" alt="Rishi Raj" width="200" height="200">
     </div>
 
     <hr>
 
     <section id="projects">
         <h2>My Projects</h2>
-        <p class="muted">Check out some of my stuff</p>
+        <p class="muted">Some of my stuff</p>
 
         <div class="project">
             <div class="project-header">
@@ -148,13 +157,13 @@
             </ul>
             <div class="project-links">
                 <a href="https://github.com/rishi0810/LeafLens-AI" target="_blank" rel="noopener noreferrer">Source</a>
-                <a href="https://leaf-lens-ai.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://leaflens.rishiapps.com/" target="_blank" rel="noopener noreferrer">Live</a>
             </div>
             <div class="project-screenshots">
                 <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
                 <div class="screenshots-container">
                     <div class="screenshot-item">
-                        <img src="static/screenshots/lld.webp" alt="LeafLens-AI desktop" loading="lazy" width="3600" height="2025">
+                        <img src="static/screenshots/lld.avif" alt="LeafLens-AI desktop" loading="lazy" width="1280" height="720">
                         <span class="screenshot-label">Desktop</span>
                     </div>
                     <div class="screenshot-item">
@@ -200,7 +209,7 @@
 
         <div class="project">
             <div class="project-header">
-                <img src="static/screenshots/bbl.avif" alt="Bable logo">
+                <img src="static/screenshots/bbl.avif" alt="Bable logo" width="1080" height="1080" loading="lazy">
                 <h3>Bable</h3>
             </div>
             <p class="project-description">Blogging website, fully supporting markdown text formatting with images.</p>
@@ -216,13 +225,13 @@
             </ul>
             <div class="project-links">
                 <a href="https://github.com/rishi0810/Bable" target="_blank" rel="noopener noreferrer">Source</a>
-                <a href="https://bable.vercel.app/" target="_blank" rel="noopener noreferrer">Live</a>
+                <a href="https://bable.rishiapps.com/" target="_blank" rel="noopener noreferrer">Live</a>
             </div>
             <div class="project-screenshots">
                 <button class="screenshots-toggle" onclick="toggleScreenshots(this)">VIEW SCREENSHOTS</button>
                 <div class="screenshots-container">
                     <div class="screenshot-item">
-                        <img src="static/screenshots/bbd.webp" alt="Bable desktop" loading="lazy" width="3600" height="2025">
+                        <img src="static/screenshots/bbd.webp" alt="Bable desktop" loading="lazy" width="1280" height="720">
                         <span class="screenshot-label">Desktop</span>
                     </div>
                     <div class="screenshot-item">
