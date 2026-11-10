@@ -1,482 +1,808 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishi Raj | Product Consultant & Full-Stack Developer</title>
-    <meta name="description"
-        content="Rishi Raj is a Product Consultant and full-stack developer building data-driven products, scalable web applications, GenAI integrations, and cloud-native solutions.">
-    <meta name="author" content="Rishi Raj">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://portfolio.rishiapps.com/">
+    <meta
+      name="description"
+      content="Rishi Raj is a Product Consultant and full-stack developer building data-driven products, scalable web applications, GenAI integrations, and cloud-native solutions."
+    />
+    <meta name="author" content="Rishi Raj" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rishiapps.com/" />
 
-    <meta property="og:title" content="Rishi Raj | Product Consultant & Full-Stack Developer">
-    <meta property="og:description"
-        content="Rishi Raj's portfolio of data-driven digital products, scalable web applications, GenAI integrations, and cloud-native solutions.">
-    <meta property="og:image" content="https://portfolio.rishiapps.com/static/share-card.webp">
-    <meta property="og:url" content="https://portfolio.rishiapps.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:image:alt" content="Rishi Raj portfolio card">
+    <meta
+      property="og:title"
+      content="Rishi Raj | Product Consultant & Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Rishi Raj's portfolio of data-driven digital products, scalable web applications, GenAI integrations, and cloud-native solutions."
+    />
+    <meta
+      property="og:image"
+      content="https://rishiapps.com/static/share-card.webp"
+    />
+    <meta property="og:url" content="https://rishiapps.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:alt" content="Rishi Raj portfolio card" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rishi Raj | Product Consultant & Full-Stack Developer">
-    <meta name="twitter:description"
-        content="Explore Rishi Raj's work across product consulting, full-stack development, GenAI integrations, and scalable web applications.">
-    <meta name="twitter:image" content="https://portfolio.rishiapps.com/static/share-card.webp">
-    <meta name="twitter:image:alt" content="Rishi Raj portfolio card">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rishi Raj | Product Consultant & Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore Rishi Raj's work across product consulting, full-stack development, GenAI integrations, and scalable web applications."
+    />
+    <meta
+      name="twitter:image"
+      content="https://rishiapps.com/static/share-card.webp"
+    />
+    <meta name="twitter:image:alt" content="Rishi Raj portfolio card" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
 
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Rishi Raj",
-            "url": "https://portfolio.rishiapps.com/",
-            "image": "https://portfolio.rishiapps.com/static/pfp.webp",
-            "jobTitle": "Product Consultant",
-            "description": "Product Consultant and full-stack developer focused on data-driven products, product management, scalable web applications, and GenAI integrations.",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "Times of India"
-            },
-            "sameAs": [
-                "https://github.com/rishi0810",
-                "https://linkedin.com/in/rishiraj2003"
-            ],
-            "knowsAbout": [
-                "Product management",
-                "Product planning",
-                "Full-stack development",
-                "Generative AI",
-                "React",
-                "Node.js",
-                "Kotlin",
-                "Cloud-native applications",
-                "Data scraping and cleaning"
-            ]
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rishi Raj",
+        "url": "https://rishiapps.com/",
+        "image": "https://rishiapps.com/static/pfp.webp",
+        "jobTitle": "Product Consultant",
+        "description": "Product Consultant and full-stack developer focused on data-driven products, product management, scalable web applications, and GenAI integrations.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Times of India"
+        },
+        "sameAs": [
+          "https://github.com/rishi0810",
+          "https://linkedin.com/in/rishiraj2003"
+        ],
+        "knowsAbout": [
+          "Product management",
+          "Product planning",
+          "Full-stack development",
+          "Generative AI",
+          "React",
+          "Node.js",
+          "Kotlin",
+          "Cloud-native applications",
+          "Data scraping and cleaning"
+        ]
+      }
     </script>
 
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="promotion.css">
-    <link rel="icon" href="https://portfolio.rishiapps.com/static/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="promotion.css" />
+    <link
+      rel="icon"
+      href="https://rishiapps.com/static/logo.webp"
+      type="image/webp"
+    />
     <script>
-        (function () {
-            var mq = window.matchMedia('(prefers-color-scheme: dark)');
-            var theme = mq.matches ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', theme);
+      (function () {
+        var mq = window.matchMedia("(prefers-color-scheme: dark)");
+        var theme = mq.matches ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", theme);
 
-            function updateHeroAvatar(currentTheme) {
-                var avatar = document.querySelector('.hero-avatar');
-                if (avatar) avatar.src = currentTheme === 'dark' ? 'static/pfp2.avif' : 'static/pfp1.avif';
-            }
+        function updateHeroAvatar(currentTheme) {
+          var avatar = document.querySelector(".hero-avatar");
+          if (avatar)
+            avatar.src =
+              currentTheme === "dark" ? "static/pfp2.avif" : "static/pfp1.avif";
+        }
 
-            document.addEventListener('DOMContentLoaded', function () {
-                var btn = document.getElementById('theme-toggle');
-                if (btn) btn.textContent = theme === 'dark' ? 'LIGHT' : 'DARK';
-                updateHeroAvatar(theme);
-            });
+        document.addEventListener("DOMContentLoaded", function () {
+          var btn = document.getElementById("theme-toggle");
+          if (btn) btn.textContent = theme === "dark" ? "LIGHT" : "DARK";
+          updateHeroAvatar(theme);
+        });
 
-            new MutationObserver(function () {
-                updateHeroAvatar(document.documentElement.getAttribute('data-theme'));
-            }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+        new MutationObserver(function () {
+          updateHeroAvatar(document.documentElement.getAttribute("data-theme"));
+        }).observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ["data-theme"],
+        });
 
-            mq.addEventListener('change', function (e) {
-                var t = e.matches ? 'dark' : 'light';
-                document.documentElement.setAttribute('data-theme', t);
-                var btn = document.getElementById('theme-toggle');
-                if (btn) btn.textContent = t === 'dark' ? 'LIGHT' : 'DARK';
-            });
-        })();
+        mq.addEventListener("change", function (e) {
+          var t = e.matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+          var btn = document.getElementById("theme-toggle");
+          if (btn) btn.textContent = t === "dark" ? "LIGHT" : "DARK";
+        });
+      })();
     </script>
-    <meta name="google-site-verification" content="4ybrRDmV7AMWx25vqahh32l8af2yoCjm2J2bdTklqQA" />
-</head>
+    <meta
+      name="google-site-verification"
+      content="4ybrRDmV7AMWx25vqahh32l8af2yoCjm2J2bdTklqQA"
+    />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="nav-left">
-            <img src="static/logo.webp" alt="RISHI RAJ" width="1024" height="1024">
-        </div>
-        <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-        </button>
-        <div class="nav-links" id="nav-links">
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-            <a href="https://github.com/rishi0810" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/rishiraj2003" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <button id="theme-toggle" onclick="toggleTheme()">DARK</button>
-        </div>
+      <div class="nav-left">
+        <img
+          src="static/logo.webp"
+          alt="RISHI RAJ"
+          width="1024"
+          height="1024"
+        />
+      </div>
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        onclick="toggleNav()"
+        aria-label="Toggle navigation"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a
+          href="https://github.com/rishi0810"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/rishiraj2003"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <button id="theme-toggle" onclick="toggleTheme()">DARK</button>
+      </div>
     </nav>
 
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <main id="main-content">
-    <div class="hero">
+      <div class="hero">
         <div class="hero-text">
-            <h1>RISHI RAJ</h1>
-            <p>Full stack, some python and mostly a Gen AI power user. Technical Product Consultant, and likes to remain ahead of the curve as if you are afraid of the change, you are left behind</p>
-            <div class="hero-links">
-                <a href="static/Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
-            </div>
+          <h1>RISHI RAJ</h1>
+          <p>
+            Full stack, some python and mostly a Gen AI power user. Technical
+            Product Consultant, and likes to remain ahead of the curve as if you
+            are afraid of the change, you are left behind
+          </p>
+          <div class="hero-links">
+            <a
+              href="static/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download CV</a
+            >
+          </div>
         </div>
-        <img class="hero-avatar" src="static/pfp1.avif" alt="Rishi Raj" width="200" height="200">
-    </div>
+        <img
+          class="hero-avatar"
+          src="static/pfp1.avif"
+          alt="Rishi Raj"
+          width="200"
+          height="200"
+        />
+      </div>
 
-    <hr>
+      <hr />
 
-    <section id="experience">
+      <section id="experience">
         <h2>Work Experience & Education</h2>
 
         <div class="timeline-wrapper">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div class="exp-title-row">
-                            <img src="static/toi.webp" alt="Times of India" class="exp-logo" width="100" height="100" loading="lazy">
-                            <div>
-                                <h3>Product Consultant</h3>
-                                <div class="company">Times of India · Promoted from Intern</div>
-                            </div>
-                        </div>
-                        <div class="timeline-badge">
-                            <span class="timeline-date">July 2026 - Present</span>
-                        </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="exp-title-row">
+                  <img
+                    src="static/toi.webp"
+                    alt="Times of India"
+                    class="exp-logo"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h3>Product Consultant</h3>
+                    <div class="company">
+                      Times of India · Promoted from Intern
                     </div>
-
-                    <div class="exp-projects">
-                        <div class="exp-proj">
-                            <div class="exp-proj-head">TOI Auto Revamp <small>Product initiative</small></div>
-                            <p>Driving the product revamp for TOI Auto, combining vehicle data scraping and cleaning with product planning, product management, and feature delivery.</p>
-                            <ul class="highlights">
-                                <li>Vehicle data scraping and structured data cleaning</li>
-                                <li>Product planning and roadmap coordination</li>
-                                <li>Product management and cross-functional execution</li>
-                                <li>Feature planning and addition for the revamped experience</li>
-                            </ul>
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <div class="exp-title-row">
-                            <img src="static/toi.webp" alt="Times of India" class="exp-logo" width="100" height="100" loading="lazy">
-                            <div>
-                                <h3>Technical Product Intern</h3>
-                                <div class="company">Times of India</div>
-                            </div>
-                        </div>
-                        <div class="timeline-badge">
-                            <span class="timeline-date">June 2025 - July 2026</span>
-                        </div>
-                    </div>
-
-                    <div class="exp-projects">
-                        <div class="exp-proj">
-                            <div class="exp-proj-head"><a
-                                    href="https://timesofindia.indiatimes.com/elections/assembly-elections/bihar/simulation-room/"
-                                    target="_blank" rel="noopener noreferrer">Bihar Election Simulation</a> <small>Nov 2025</small></div>
-                            <p>Co-developed automated election simulation platform with custom web scraper and LLM integration.
-                                Scaled to 11,000 peak concurrent users with 3x average session duration. Runner-Up in Times
-                                Internet AI-Innovation Challenge.</p>
-                            <ul class="tech-list">
-                                <li><img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-                                        alt="Next.js"></li>
-                                <li><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-                                        alt="Jenkins"></li>
-                                <li><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-                                        alt="Kubernetes"></li>
-                                <li><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-                                        alt="Docker"></li>
-                            </ul>
-                            <ul class="highlights">
-                                <li>11,000 peak concurrent users</li>
-                                <li>3x average session duration</li>
-                                <li>Runner-Up in Times Internet AI-Innovation Challenge</li>
-                            </ul>
-                        </div>
-                        <div class="exp-proj">
-                            <div class="exp-proj-head"><a
-                                    href="https://timesofindia.indiatimes.com/business/budget/simulation-room/"
-                                    target="_blank" rel="noopener noreferrer">TOI Budget Simulation</a> <small>Jan 2026</small></div>
-                            <p>Solo-developed interactive Union Budget simulation using React SSR, achieving 17,000 unique users
-                                and 11% replay funnel with GenAI-accelerated asset creation.</p>
-                            <ul class="tech-list">
-                                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                                        alt="React SSR"></li>
-                                <li><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-                                        alt="Kubernetes"></li>
-                                <li><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-                                        alt="Jenkins"></li>
-                                <li><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-                                        alt="Docker"></li>
-                            </ul>
-                            <ul class="highlights">
-                                <li>17,000 unique users</li>
-                                <li>11% replay funnel</li>
-                                <li>Solo development with GenAI-accelerated workflows</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="timeline-badge">
+                  <span class="timeline-date">July 2026 - Present</span>
                 </div>
+              </div>
+
+              <div class="exp-projects">
+                <div class="exp-proj">
+                  <div class="exp-proj-head">
+                    TOI Auto Revamp <small>Product initiative</small>
+                  </div>
+                  <p>
+                    Driving the product revamp for TOI Auto, combining vehicle
+                    data scraping and cleaning with product planning, product
+                    management, and feature delivery.
+                  </p>
+                  <ul class="highlights">
+                    <li>Vehicle data scraping and structured data cleaning</li>
+                    <li>Product planning and roadmap coordination</li>
+                    <li>Product management and cross-functional execution</li>
+                    <li>
+                      Feature planning and addition for the revamped experience
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="exp-title-row">
+                  <img
+                    src="static/toi.webp"
+                    alt="Times of India"
+                    class="exp-logo"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h3>Technical Product Intern</h3>
+                    <div class="company">Times of India</div>
+                  </div>
+                </div>
+                <div class="timeline-badge">
+                  <span class="timeline-date">June 2025 - July 2026</span>
+                </div>
+              </div>
+
+              <div class="exp-projects">
+                <div class="exp-proj">
+                  <div class="exp-proj-head">
+                    <a
+                      href="https://timesofindia.indiatimes.com/elections/assembly-elections/bihar/simulation-room/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Bihar Election Simulation</a
+                    >
+                    <small>Nov 2025</small>
+                  </div>
+                  <p>
+                    Co-developed automated election simulation platform with
+                    custom web scraper and LLM integration. Scaled to 11,000
+                    peak concurrent users with 3x average session duration.
+                    Runner-Up in Times Internet AI-Innovation Challenge.
+                  </p>
+                  <ul class="tech-list">
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+                        alt="Next.js"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+                        alt="Jenkins"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                        alt="Kubernetes"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                        alt="Docker"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="highlights">
+                    <li>11,000 peak concurrent users</li>
+                    <li>3x average session duration</li>
+                    <li>Runner-Up in Times Internet AI-Innovation Challenge</li>
+                  </ul>
+                </div>
+                <div class="exp-proj">
+                  <div class="exp-proj-head">
+                    <a
+                      href="https://timesofindia.indiatimes.com/business/budget/simulation-room/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >TOI Budget Simulation</a
+                    >
+                    <small>Jan 2026</small>
+                  </div>
+                  <p>
+                    Solo-developed interactive Union Budget simulation using
+                    React SSR, achieving 17,000 unique users and 11% replay
+                    funnel with GenAI-accelerated asset creation.
+                  </p>
+                  <ul class="tech-list">
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                        alt="React SSR"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+                        alt="Kubernetes"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+                        alt="Jenkins"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                        alt="Docker"
+                      />
+                    </li>
+                  </ul>
+                  <ul class="highlights">
+                    <li>17,000 unique users</li>
+                    <li>11% replay funnel</li>
+                    <li>Solo development with GenAI-accelerated workflows</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="standalone-exp-list">
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-title-row">
-                        <img src="static/iic.webp" alt="Institution's Innovation Council" class="exp-logo" width="100" height="100" loading="lazy">
-                        <div>
-                            <h3>Content Team Lead</h3>
-                            <div class="company">Institution's Innovation Council</div>
-                        </div>
-                    </div>
-                    <div class="date">Oct 2023 - Jan 2025</div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-row">
+                <img
+                  src="static/iic.webp"
+                  alt="Institution's Innovation Council"
+                  class="exp-logo"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>Content Team Lead</h3>
+                  <div class="company">Institution's Innovation Council</div>
                 </div>
-                <p>Led content strategy and creation for innovation initiatives, managing reports, social media, and
-                    newsletters.</p>
-                <ul>
-                    <li>Generated comprehensive reports for Ministry of Education AICTE panel</li>
-                    <li>Managed content workflow for social media posts and campaigns</li>
-                    <li>Led newsletter creation and design initiatives</li>
-                </ul>
+              </div>
+              <div class="date">Oct 2023 - Jan 2025</div>
             </div>
+            <p>
+              Led content strategy and creation for innovation initiatives,
+              managing reports, social media, and newsletters.
+            </p>
+            <ul>
+              <li>
+                Generated comprehensive reports for Ministry of Education AICTE
+                panel
+              </li>
+              <li>
+                Managed content workflow for social media posts and campaigns
+              </li>
+              <li>Led newsletter creation and design initiatives</li>
+            </ul>
+          </div>
 
-            <div class="exp-item">
-                <div class="exp-header">
-                    <div class="exp-title-row">
-                        <img src="static/uni.svg" alt="University Logo" class="exp-logo" width="800" height="800" loading="lazy">
-                        <div>
-                            <h3>B.Tech - Information Technology</h3>
-                            <div class="company">Guru Tegh Bahadur Institute of Technology, GGSIPU</div>
-                        </div>
-                    </div>
-                    <div class="date">2022 - 2026</div>
+          <div class="exp-item">
+            <div class="exp-header">
+              <div class="exp-title-row">
+                <img
+                  src="static/uni.svg"
+                  alt="University Logo"
+                  class="exp-logo"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>B.Tech - Information Technology</h3>
+                  <div class="company">
+                    Guru Tegh Bahadur Institute of Technology, GGSIPU
+                  </div>
                 </div>
-                <p>CGPA: 8.99 | Focus on Data Structures, Algorithms, OOPS, DBMS, and Generative AI</p>
+              </div>
+              <div class="date">2022 - 2026</div>
             </div>
+            <p>
+              CGPA: 8.99 | Focus on Data Structures, Algorithms, OOPS, DBMS, and
+              Generative AI
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr />
 
-    <section id="skills">
+      <section id="skills">
         <h2>Technical Skills</h2>
         <div class="skills-grid">
-            <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-                alt="JavaScript">
-            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-                alt="Python">
-            <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"
-                alt="Kotlin">
-            <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
-                alt="C++">
-            <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-                alt="HTML">
-            <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-            <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                alt="React">
-            <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-                alt="Next.js">
-            <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-                alt="Node.js">
-            <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
-                alt="Express">
-            <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-                alt="Tailwind">
-            <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-                alt="MongoDB">
-            <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-                alt="Docker">
-            <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-                alt="Kubernetes">
-            <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-                alt="Jenkins">
-            <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+          <img
+            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+            alt="JavaScript"
+          />
+          <img
+            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
+            alt="Python"
+          />
+          <img
+            src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"
+            alt="Kotlin"
+          />
+          <img
+            src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
+            alt="C++"
+          />
+          <img
+            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML"
+          />
+          <img
+            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+            alt="CSS"
+          />
+          <img
+            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+            alt="React"
+          />
+          <img
+            src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
+            alt="Next.js"
+          />
+          <img
+            src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
+            alt="Node.js"
+          />
+          <img
+            src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+            alt="Express"
+          />
+          <img
+            src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+            alt="Tailwind"
+          />
+          <img
+            src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+            alt="MongoDB"
+          />
+          <img
+            src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+            alt="Docker"
+          />
+          <img
+            src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
+            alt="Kubernetes"
+          />
+          <img
+            src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
+            alt="Jenkins"
+          />
+          <img
+            src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
+            alt="Git"
+          />
         </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr />
 
-    <section id="projects">
+      <section id="projects">
         <h2>My Projects</h2>
         <p class="muted">Some of my stuff</p>
 
         <div class="projects-grid">
-            <div class="project">
-                <div class="project-header">
-                    <img src="static/screenshots/lll.svg" alt="LeafLens-AI logo" width="800" height="800" loading="lazy">
-                    <div>
-                        <h3>LeafLens-AI</h3>
-                        <span class="project-category">AI / Computer Vision</span>
-                    </div>
-                </div>
-
-                <p class="project-value-prop">Detects 38+ plant diseases from leaf images with ~70% accuracy.</p>
-
-                <div class="screenshots-container">
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/lld.avif" alt="LeafLens-AI desktop" loading="lazy" width="1280" height="720">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/llm.webp" alt="LeafLens-AI mobile" loading="lazy" width="351" height="710">
-                    </div>
-                </div>
-
-                <div class="project-actions">
-                    <a href="https://leaflens.rishiapps.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
-                    <a href="https://github.com/rishi0810/LeafLens-AI" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code</a>
-                </div>
-
-                <div class="project-metrics">
-                    <span class="metric-tag">38+ diseases</span>
-                    <span class="metric-tag">~70% accuracy</span>
-                    <span class="metric-tag">Image diagnosis</span>
-                </div>
-
-                <div class="project-tech-stack">
-                    React · Node.js · Express · Gemini · Tailwind
-                </div>
+          <div class="project">
+            <div class="project-header">
+              <img
+                src="static/screenshots/lll.svg"
+                alt="LeafLens-AI logo"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <div>
+                <h3>LeafLens-AI</h3>
+                <span class="project-category">AI / Computer Vision</span>
+              </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <img src="static/screenshots/mcli.webp" alt="Musicality logo" width="800" height="800" loading="lazy">
-                    <div>
-                        <h3>Musicality</h3>
-                        <span class="project-category">Android / Media Streaming</span>
-                    </div>
-                </div>
+            <p class="project-value-prop">
+              Detects 38+ plant diseases from leaf images with ~70% accuracy.
+            </p>
 
-                <p class="project-value-prop">High-performance music streaming app built with native Kotlin and ExoPlayer.</p>
-
-                <div class="screenshots-container">
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/mcld.webp" alt="Musicality desktop" loading="lazy" width="3600" height="2025">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/mclm.webp" alt="Musicality mobile" loading="lazy" width="395" height="800">
-                    </div>
-                </div>
-
-                <div class="project-actions">
-                    <a href="https://github.com/rishi0810/Musicality-App" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Source Code</a>
-                </div>
-
-                <div class="project-metrics">
-                    <span class="metric-tag">ExoPlayer Engine</span>
-                    <span class="metric-tag">Jetpack Compose</span>
-                    <span class="metric-tag">Native Android</span>
-                </div>
-
-                <div class="project-tech-stack">
-                    Kotlin · Jetpack Compose · ExoPlayer · Android SDK
-                </div>
+            <div class="screenshots-container">
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/lld.avif"
+                  alt="LeafLens-AI desktop"
+                  loading="lazy"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/llm.webp"
+                  alt="LeafLens-AI mobile"
+                  loading="lazy"
+                  width="351"
+                  height="710"
+                />
+              </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <img src="static/screenshots/bbl.avif" alt="Bable logo" width="1080" height="1080" loading="lazy">
-                    <div>
-                        <h3>Bable</h3>
-                        <span class="project-category">Full-Stack / Publishing</span>
-                    </div>
-                </div>
-
-                <p class="project-value-prop">Modern blogging platform with full Markdown formatting and rich media support.</p>
-
-                <div class="screenshots-container">
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/bbd.webp" alt="Bable desktop" loading="lazy" width="1280" height="720">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/bbm.webp" alt="Bable mobile" loading="lazy" width="349" height="714">
-                    </div>
-                </div>
-
-                <div class="project-actions">
-                    <a href="https://bable.rishiapps.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
-                    <a href="https://github.com/rishi0810/Bable" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code</a>
-                </div>
-
-                <div class="project-metrics">
-                    <span class="metric-tag">Markdown Support</span>
-                    <span class="metric-tag">Rich Media Embeds</span>
-                    <span class="metric-tag">Full-Stack CRUD</span>
-                </div>
-
-                <div class="project-tech-stack">
-                    React · Express · MongoDB · Tailwind
-                </div>
+            <div class="project-actions">
+              <a
+                href="https://leaflens.rishiapps.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rishi0810/LeafLens-AI"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+                >Source Code</a
+              >
             </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <img src="static/screenshots/jnl.svg" alt="JeeNeetards logo" width="800" height="800" loading="lazy">
-                    <div>
-                        <h3>JeeNeetards</h3>
-                        <span class="project-category">EdTech / AI Progress Tracker</span>
-                    </div>
-                </div>
-
-                <p class="project-value-prop">AI-powered progress tracker and personalized study analytics for competitive exams.</p>
-
-                <div class="screenshots-container">
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/jnd.webp" alt="JeeNeetards desktop" loading="lazy" width="3600" height="2025">
-                    </div>
-                    <div class="screenshot-item">
-                        <img src="static/screenshots/jnm.webp" alt="JeeNeetards mobile" loading="lazy" width="352" height="708">
-                    </div>
-                </div>
-
-                <div class="project-actions">
-                    <a href="https://jeeneetardsv1.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
-                    <a href="https://github.com/rishi0810/JeeNeeTards" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code</a>
-                </div>
-
-                <div class="project-metrics">
-                    <span class="metric-tag">AI Analytics</span>
-                    <span class="metric-tag">Exam Tracker</span>
-                    <span class="metric-tag">Study Insights</span>
-                </div>
-
-                <div class="project-tech-stack">
-                    React · Gemini · Tailwind
-                </div>
+            <div class="project-metrics">
+              <span class="metric-tag">38+ diseases</span>
+              <span class="metric-tag">~70% accuracy</span>
+              <span class="metric-tag">Image diagnosis</span>
             </div>
+
+            <div class="project-tech-stack">
+              React · Node.js · Express · Gemini · Tailwind
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <img
+                src="static/screenshots/mcli.webp"
+                alt="Musicality logo"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <div>
+                <h3>Musicality</h3>
+                <span class="project-category">Android / Media Streaming</span>
+              </div>
+            </div>
+
+            <p class="project-value-prop">
+              High-performance music streaming app built with native Kotlin and
+              ExoPlayer.
+            </p>
+
+            <div class="screenshots-container">
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/mcld.webp"
+                  alt="Musicality desktop"
+                  loading="lazy"
+                  width="3600"
+                  height="2025"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/mclm.webp"
+                  alt="Musicality mobile"
+                  loading="lazy"
+                  width="395"
+                  height="800"
+                />
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a
+                href="https://github.com/rishi0810/Musicality-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                >Source Code</a
+              >
+            </div>
+
+            <div class="project-metrics">
+              <span class="metric-tag">ExoPlayer Engine</span>
+              <span class="metric-tag">Jetpack Compose</span>
+              <span class="metric-tag">Native Android</span>
+            </div>
+
+            <div class="project-tech-stack">
+              Kotlin · Jetpack Compose · ExoPlayer · Android SDK
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <img
+                src="static/screenshots/bbl.avif"
+                alt="Bable logo"
+                width="1080"
+                height="1080"
+                loading="lazy"
+              />
+              <div>
+                <h3>Bable</h3>
+                <span class="project-category">Full-Stack / Publishing</span>
+              </div>
+            </div>
+
+            <p class="project-value-prop">
+              Modern blogging platform with full Markdown formatting and rich
+              media support.
+            </p>
+
+            <div class="screenshots-container">
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/bbd.webp"
+                  alt="Bable desktop"
+                  loading="lazy"
+                  width="1280"
+                  height="720"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/bbm.webp"
+                  alt="Bable mobile"
+                  loading="lazy"
+                  width="349"
+                  height="714"
+                />
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a
+                href="https://bable.rishiapps.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rishi0810/Bable"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+                >Source Code</a
+              >
+            </div>
+
+            <div class="project-metrics">
+              <span class="metric-tag">Markdown Support</span>
+              <span class="metric-tag">Rich Media Embeds</span>
+              <span class="metric-tag">Full-Stack CRUD</span>
+            </div>
+
+            <div class="project-tech-stack">
+              React · Express · MongoDB · Tailwind
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-header">
+              <img
+                src="static/screenshots/jnl.svg"
+                alt="JeeNeetards logo"
+                width="800"
+                height="800"
+                loading="lazy"
+              />
+              <div>
+                <h3>JeeNeetards</h3>
+                <span class="project-category"
+                  >EdTech / AI Progress Tracker</span
+                >
+              </div>
+            </div>
+
+            <p class="project-value-prop">
+              AI-powered progress tracker and personalized study analytics for
+              competitive exams.
+            </p>
+
+            <div class="screenshots-container">
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/jnd.webp"
+                  alt="JeeNeetards desktop"
+                  loading="lazy"
+                  width="3600"
+                  height="2025"
+                />
+              </div>
+              <div class="screenshot-item">
+                <img
+                  src="static/screenshots/jnm.webp"
+                  alt="JeeNeetards mobile"
+                  loading="lazy"
+                  width="352"
+                  height="708"
+                />
+              </div>
+            </div>
+
+            <div class="project-actions">
+              <a
+                href="https://jeeneetardsv1.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/rishi0810/JeeNeeTards"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+                >Source Code</a
+              >
+            </div>
+
+            <div class="project-metrics">
+              <span class="metric-tag">AI Analytics</span>
+              <span class="metric-tag">Exam Tracker</span>
+              <span class="metric-tag">Study Insights</span>
+            </div>
+
+            <div class="project-tech-stack">React · Gemini · Tailwind</div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <hr>
+      <hr />
 
-    <section id="contact">
+      <section id="contact">
         <h2>Get in Touch</h2>
         <p class="muted">Feel free to reach out if you're on to something</p>
         <div class="contact-info">
-            <a href="mailto:rishi.1003raj@gmail.com">rishi.1003raj@gmail.com</a>
-            <a href="tel:+919911449830">+91-9911449830</a>
+          <a href="mailto:rishi.1003raj@gmail.com">rishi.1003raj@gmail.com</a>
+          <a href="tel:+919911449830">+91-9911449830</a>
         </div>
-    </section>
-
+      </section>
     </main>
 
-    <footer>
-        &copy; 2026 Rishi Raj. All rights reserved.
-    </footer>
+    <footer>&copy; 2026 Rishi Raj. All rights reserved.</footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
