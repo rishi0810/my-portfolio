@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Page Not Found | Rishi Raj</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://rishiapps.com/" />
+    <link rel="icon" href="static/logo.webp" type="image/webp" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .error-page {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3rem 1rem;
+      }
+      .error-code {
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1rem;
+        letter-spacing: 0.05em;
+      }
+      .error-msg {
+        font-size: 1.15rem;
+        color: var(--fg-muted);
+        max-width: 480px;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="/" style="display:flex;align-items:center;text-decoration:none;color:inherit;">
+          <img src="static/logo.webp" alt="Rishi Raj" width="36" height="36" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/#experience">Experience</a>
+        <a href="/#projects">Projects</a>
+        <a href="/#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main class="error-page">
+      <div class="error-code">404</div>
+      <h1>Page Not Found</h1>
+      <p class="error-msg">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <a href="/" class="btn btn-primary">Back to Home</a>
+    </main>
+
+    <footer>
+      &copy; <script>document.write(new Date().getFullYear())</script> Rishi Raj. All rights reserved.
+    </footer>
+  </body>
+</html>
+

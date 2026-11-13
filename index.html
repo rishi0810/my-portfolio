@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+
     <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W84THX5M"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     </script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W84THX5M"></script>
     <!-- End Google Tag Manager -->
-
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rishi Raj | Product Consultant & Full-Stack Developer</title>
     <meta
@@ -35,6 +36,7 @@
     />
     <meta property="og:url" content="https://rishiapps.com/" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_IN" />
     <meta property="og:image:alt" content="Rishi Raj portfolio card" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -65,45 +67,65 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rishi Raj",
-        "url": "https://rishiapps.com/",
-        "image": "https://rishiapps.com/static/pfp.webp",
-        "jobTitle": "Product Consultant",
-        "description": "Product Consultant and full-stack developer focused on data-driven products, product management, scalable web applications, and GenAI integrations.",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Times of India"
-        },
-        "sameAs": [
-          "https://github.com/rishi0810",
-          "https://linkedin.com/in/rishiraj2003"
-        ],
-        "knowsAbout": [
-          "Product management",
-          "Product planning",
-          "Full-stack development",
-          "Generative AI",
-          "React",
-          "Node.js",
-          "Kotlin",
-          "Cloud-native applications",
-          "Data scraping and cleaning"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://rishiapps.com/#website",
+            "url": "https://rishiapps.com/",
+            "name": "Rishi Raj | Product Consultant & Full-Stack Developer",
+            "description": "Portfolio of Rishi Raj — Product Consultant and full-stack developer building data-driven products, scalable web applications, and GenAI integrations.",
+            "publisher": {
+              "@id": "https://rishiapps.com/#person"
+            },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://rishiapps.com/#person",
+            "name": "Rishi Raj",
+            "url": "https://rishiapps.com/",
+            "image": "https://rishiapps.com/static/pfp.webp",
+            "jobTitle": "Product Consultant",
+            "email": "mailto:rishi.1003raj@gmail.com",
+            "telephone": "+91-9911449830",
+            "description": "Product Consultant and full-stack developer focused on data-driven products, product management, scalable web applications, and GenAI integrations.",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Times of India"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Guru Tegh Bahadur Institute of Technology, GGSIPU"
+            },
+            "sameAs": [
+              "https://github.com/rishi0810",
+              "https://www.linkedin.com/in/rishiraj2003"
+            ],
+            "knowsAbout": [
+              "Product management",
+              "Product planning",
+              "Full-stack development",
+              "Generative AI",
+              "React",
+              "Node.js",
+              "Kotlin",
+              "Cloud-native applications",
+              "Data scraping and cleaning"
+            ]
+          }
         ]
       }
     </script>
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="promotion.css" />
-    <link
-      rel="icon"
-      href="https://rishiapps.com/static/logo.webp"
-      type="image/webp"
-    />
+    <link rel="icon" href="static/logo.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="static/logo.webp" />
     <script>
       (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("theme"); } catch (e) {}
         var mq = window.matchMedia("(prefers-color-scheme: dark)");
-        var theme = mq.matches ? "dark" : "light";
+        var theme = saved || (mq.matches ? "dark" : "light");
         document.documentElement.setAttribute("data-theme", theme);
 
         function updateHeroAvatar(currentTheme) {
@@ -127,6 +149,7 @@
         });
 
         mq.addEventListener("change", function (e) {
+          try { if (localStorage.getItem("theme")) return; } catch (err) {}
           var t = e.matches ? "dark" : "light";
           document.documentElement.setAttribute("data-theme", t);
           var btn = document.getElementById("theme-toggle");
@@ -143,12 +166,14 @@
   <body>
     <nav>
       <div class="nav-left">
-        <img
-          src="static/logo.webp"
-          alt="RISHI RAJ"
-          width="1024"
-          height="1024"
-        />
+        <a href="/" aria-label="Rishi Raj Home" style="display:flex;align-items:center;text-decoration:none;">
+          <img
+            src="static/logo.webp"
+            alt="RISHI RAJ"
+            width="36"
+            height="36"
+          />
+        </a>
       </div>
       <button
         class="nav-toggle"
@@ -170,7 +195,7 @@
           >GitHub</a
         >
         <a
-          href="https://linkedin.com/in/rishiraj2003"
+          href="https://www.linkedin.com/in/rishiraj2003"
           target="_blank"
           rel="noopener noreferrer"
           >LinkedIn</a
@@ -184,11 +209,13 @@
     <main id="main-content">
       <div class="hero">
         <div class="hero-text">
-          <h1>RISHI RAJ</h1>
+          <h1>RISHI RAJ <span class="muted" style="font-size:.55em;font-weight:400;display:block;letter-spacing:.02em;">Product Consultant &amp; Full-Stack Developer</span></h1>
           <p>
-            Full stack, some python and mostly a Gen AI power user. Technical
-            Product Consultant, and likes to remain ahead of the curve as if you
-            are afraid of the change, you are left behind
+            Product Consultant and full-stack developer specializing in GenAI
+            integrations, data-driven products, and scalable web applications.
+            Currently building at Times of India — and always staying ahead of
+            the curve, because if you're afraid of the change, you get left
+            behind.
           </p>
           <div class="hero-links">
             <a
@@ -205,13 +232,14 @@
           alt="Rishi Raj"
           width="200"
           height="200"
+          fetchpriority="high"
         />
       </div>
 
       <hr />
 
-      <section id="experience">
-        <h2>Work Experience & Education</h2>
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Work Experience & Education</h2>
 
         <div class="timeline-wrapper">
           <div class="timeline-item">
@@ -303,30 +331,10 @@
                     Runner-Up in Times Internet AI-Innovation Challenge.
                   </p>
                   <ul class="tech-list">
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-                        alt="Next.js"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-                        alt="Jenkins"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-                        alt="Kubernetes"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-                        alt="Docker"
-                      />
-                    </li>
+                    <li><img src="static/badges/nextjs.svg" alt="Next.js" width="99" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/jenkins.svg" alt="Jenkins" width="102" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/kubernetes.svg" alt="Kubernetes" width="131" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/docker.svg" alt="Docker" width="98" height="28" loading="lazy" /></li>
                   </ul>
                   <ul class="highlights">
                     <li>11,000 peak concurrent users</li>
@@ -350,30 +358,10 @@
                     funnel with GenAI-accelerated asset creation.
                   </p>
                   <ul class="tech-list">
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-                        alt="React SSR"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-                        alt="Kubernetes"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-                        alt="Jenkins"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-                        alt="Docker"
-                      />
-                    </li>
+                    <li><img src="static/badges/react.svg" alt="React SSR" width="86" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/kubernetes.svg" alt="Kubernetes" width="131" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/jenkins.svg" alt="Jenkins" width="102" height="28" loading="lazy" /></li>
+                    <li><img src="static/badges/docker.svg" alt="Docker" width="98" height="28" loading="lazy" /></li>
                   </ul>
                   <ul class="highlights">
                     <li>17,000 unique users</li>
@@ -451,80 +439,32 @@
 
       <hr />
 
-      <section id="skills">
-        <h2>Technical Skills</h2>
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Technical Skills</h2>
         <div class="skills-grid">
-          <img
-            src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-            alt="JavaScript"
-          />
-          <img
-            src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"
-            alt="Python"
-          />
-          <img
-            src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white"
-            alt="Kotlin"
-          />
-          <img
-            src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"
-            alt="C++"
-          />
-          <img
-            src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-            alt="HTML"
-          />
-          <img
-            src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-            alt="CSS"
-          />
-          <img
-            src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-            alt="React"
-          />
-          <img
-            src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white"
-            alt="Next.js"
-          />
-          <img
-            src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"
-            alt="Node.js"
-          />
-          <img
-            src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
-            alt="Express"
-          />
-          <img
-            src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-            alt="Tailwind"
-          />
-          <img
-            src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-            alt="MongoDB"
-          />
-          <img
-            src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
-            alt="Docker"
-          />
-          <img
-            src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"
-            alt="Kubernetes"
-          />
-          <img
-            src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white"
-            alt="Jenkins"
-          />
-          <img
-            src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"
-            alt="Git"
-          />
+          <img src="static/badges/javascript.svg" alt="JavaScript" width="127" height="28" loading="lazy" />
+          <img src="static/badges/python.svg" alt="Python" width="98" height="28" loading="lazy" />
+          <img src="static/badges/kotlin.svg" alt="Kotlin" width="95" height="28" loading="lazy" />
+          <img src="static/badges/cpp.svg" alt="C++" width="72" height="28" loading="lazy" />
+          <img src="static/badges/html5.svg" alt="HTML" width="88" height="28" loading="lazy" />
+          <img src="static/badges/css3.svg" alt="CSS" width="57" height="28" loading="lazy" />
+          <img src="static/badges/react.svg" alt="React" width="86" height="28" loading="lazy" />
+          <img src="static/badges/nextjs.svg" alt="Next.js" width="99" height="28" loading="lazy" />
+          <img src="static/badges/nodejs.svg" alt="Node.js" width="101" height="28" loading="lazy" />
+          <img src="static/badges/expressjs.svg" alt="Express" width="123" height="28" loading="lazy" />
+          <img src="static/badges/tailwindcss.svg" alt="Tailwind" width="143" height="28" loading="lazy" />
+          <img src="static/badges/mongodb.svg" alt="MongoDB" width="111" height="28" loading="lazy" />
+          <img src="static/badges/docker.svg" alt="Docker" width="98" height="28" loading="lazy" />
+          <img src="static/badges/kubernetes.svg" alt="Kubernetes" width="131" height="28" loading="lazy" />
+          <img src="static/badges/jenkins.svg" alt="Jenkins" width="102" height="28" loading="lazy" />
+          <img src="static/badges/git.svg" alt="Git" width="68" height="28" loading="lazy" />
         </div>
       </section>
 
       <hr />
 
-      <section id="projects">
-        <h2>My Projects</h2>
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">My Projects</h2>
         <p class="muted">Some of my stuff</p>
 
         <div class="projects-grid">
@@ -800,8 +740,8 @@
 
       <hr />
 
-      <section id="contact">
-        <h2>Get in Touch</h2>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in Touch</h2>
         <p class="muted">Feel free to reach out if you're on to something</p>
         <div class="contact-info">
           <a href="mailto:rishi.1003raj@gmail.com">rishi.1003raj@gmail.com</a>
@@ -810,7 +750,7 @@
       </section>
     </main>
 
-    <footer>&copy; 2026 Rishi Raj. All rights reserved.</footer>
+    <footer>&copy; <script>document.write(new Date().getFullYear())</script> Rishi Raj. All rights reserved.</footer>
 
     <script src="script.js"></script>
   </body>

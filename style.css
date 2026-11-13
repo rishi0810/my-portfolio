@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Atkinson Hyperlegible';
-    src: url('static/font/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+    src: url('static/font/AtkinsonHyperlegible-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Atkinson Hyperlegible';
-    src: url('static/font/AtkinsonHyperlegible-Italic.ttf') format('truetype');
+    src: url('static/font/AtkinsonHyperlegible-Italic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Atkinson Hyperlegible';
-    src: url('static/font/AtkinsonHyperlegible-Bold.ttf') format('truetype');
+    src: url('static/font/AtkinsonHyperlegible-Bold.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Atkinson Hyperlegible';
-    src: url('static/font/AtkinsonHyperlegible-BoldItalic.ttf') format('truetype');
+    src: url('static/font/AtkinsonHyperlegible-BoldItalic.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -34,6 +34,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:focus-visible {
+    outline: 2px solid var(--fg);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 :root[data-theme="light"] {
@@ -634,7 +648,51 @@ footer {
     color: var(--fg-muted);
 }
 
-/* Responsive Rules */
+/* Skip Link & Promotion helpers */
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -4rem;
+    z-index: 100;
+    padding: .6rem .8rem;
+    color: var(--bg);
+    background: var(--fg);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+.promotion-note {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin: -.75rem 0 1.25rem 1.25rem;
+    color: var(--fg-muted);
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.promotion-note::before {
+    content: "";
+    width: 1.5rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.promotion-role {
+    border-left-color: var(--fg);
+}
+
+@media (max-width: 600px) {
+    .promotion-note {
+        margin-left: .85rem;
+        font-size: .68rem;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         padding: 2rem 1.25rem;
