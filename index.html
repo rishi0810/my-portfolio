@@ -117,6 +117,20 @@
       }
     </script>
 
+    <link
+      rel="preload"
+      href="static/font/AtkinsonHyperlegible-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="static/font/AtkinsonHyperlegible-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="static/logo.webp" type="image/webp" />
     <link rel="apple-touch-icon" href="static/logo.webp" />
@@ -541,8 +555,8 @@
               <img
                 src="static/screenshots/mcli.webp"
                 alt="Musicality logo"
-                width="800"
-                height="800"
+                width="36"
+                height="36"
                 loading="lazy"
               />
               <div>
@@ -562,8 +576,8 @@
                   src="static/screenshots/mcld.webp"
                   alt="Musicality desktop"
                   loading="lazy"
-                  width="3600"
-                  height="2025"
+                  width="1280"
+                  height="720"
                 />
               </div>
               <div class="screenshot-item">
@@ -571,8 +585,8 @@
                   src="static/screenshots/mclm.webp"
                   alt="Musicality mobile"
                   loading="lazy"
-                  width="395"
-                  height="800"
+                  width="355"
+                  height="720"
                 />
               </div>
             </div>
@@ -603,8 +617,8 @@
               <img
                 src="static/screenshots/bbl.avif"
                 alt="Bable logo"
-                width="1080"
-                height="1080"
+                width="36"
+                height="36"
                 loading="lazy"
               />
               <div>
@@ -695,8 +709,8 @@
                   src="static/screenshots/jnd.webp"
                   alt="JeeNeetards desktop"
                   loading="lazy"
-                  width="3600"
-                  height="2025"
+                  width="1280"
+                  height="720"
                 />
               </div>
               <div class="screenshot-item">
@@ -750,8 +764,8 @@
       </section>
     </main>
 
-    <footer>&copy; <script>document.write(new Date().getFullYear())</script> Rishi Raj. All rights reserved.</footer>
+    <footer>&copy; <span id="current-year">2026</span> Rishi Raj. All rights reserved.</footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

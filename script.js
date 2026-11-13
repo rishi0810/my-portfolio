@@ -29,6 +29,11 @@ function toggleNav() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  var yearEl = document.getElementById("current-year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
   document.querySelectorAll(".nav-links a").forEach(function (link) {
     link.addEventListener("click", function () {
       var navLinks = document.getElementById("nav-links");
